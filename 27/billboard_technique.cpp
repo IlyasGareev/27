@@ -16,7 +16,7 @@
 */
 
 #include "billboard_technique.h"
-
+//вершинный шейдер метода billboard
 static const char* pVS = "                                                          \n\
 #version 330                                                                        \n\
                                                                                     \n\
@@ -27,7 +27,7 @@ void main()                                                                     
     gl_Position = vec4(Position, 1.0);                                              \n\
 }                                                                                   \n\
 ";
-
+//√еометрический шейдер
 
 static const char* pGS = "                                                          \n\
 #version 330                                                                        \n\

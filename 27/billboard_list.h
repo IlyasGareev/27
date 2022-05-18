@@ -30,7 +30,7 @@ public:
     BillboardList();    
     ~BillboardList();
     
-    bool Init(const std::string& TexFilename);
+    bool Init(const std::string& TexFilename); //изображение, которое будет отображаться на billboard
     
     void Render(const Matrix4f& VP, const Vector3f& CameraPos);
 

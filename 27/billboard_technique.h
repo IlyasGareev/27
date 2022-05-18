@@ -20,7 +20,7 @@
 
 #include "technique.h"
 #include "math_3d.h"
-
+//интерфейс для метода billboard
 class BillboardTechnique : public Technique 
 {
 public:
@@ -28,7 +28,8 @@ public:
     BillboardTechnique();
  
     virtual bool Init();
-    
+    //требует только 3 параметра для работы: комбинация матрицы проекции, 
+    //позиция камеры в мировом пространстве и номер модуля текстуры, к которому будет привязана текстура billboard.
     void SetVP(const Matrix4f& VP);
     void SetCameraPosition(const Vector3f& Pos);
     void SetColorTextureUnit(unsigned int TextureUnit);

@@ -89,7 +89,7 @@ void BillboardList::Render(const Matrix4f& VP, const Vector3f& CameraPos)
     
     glBindBuffer(GL_ARRAY_BUFFER, m_VB);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);   // position
-    
+    //billboards стоят ровными рядами и колонками
     glDrawArrays(GL_POINTS, 0, NUM_ROWS * NUM_COLUMNS);
     
     glDisableVertexAttribArray(0);
